@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "942373546303",
+    "firebase_url": "https://urrgeo12-532b0.firebaseio.com",
+    "project_id": "urrgeo12-532b0",
+    "storage_bucket": "urrgeo12-532b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942373546303:android:12575dcfca166de7",
+        "android_client_info": {
+          "package_name": "com.urrgeo.urrgeo12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942373546303-hcdng2comfb2v4cnmlji4vuje5q7ive9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSlecfK41qCFQGTOFdIqJsiPa5gJW6Uk4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
