@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
   FirebaseUser _user;
   String _username = 'no user login';
   String _email = 'no user email';
-  String _photourl = 'no user photo';
+  //String _photourl = 'no user photo';
 
   @override
   void initState() {
@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
         ? 'no user login'
         : _user.displayName.split('|')[0]);
     _email = _user.email;
-    _photourl = (_user.photoUrl == null ? '' : _user.photoUrl);
+    //_photourl = (_user.photoUrl == null ? '' : _user.photoUrl);
   }
 
   void _checkEmailVerification() async {

@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
+// ignore: camel_case_types
 class urapi {
   // next three lines makes this class a Singleton
   static urapi _instance = new urapi.internal();
