@@ -30,6 +30,7 @@ class _HomeState extends State<Home> {
   FirebaseUser _user;
   String _username = 'no user login';
   String _email = 'no user email';
+
   //String _photourl = 'no user photo';
 
   @override
@@ -42,6 +43,8 @@ class _HomeState extends State<Home> {
 
   void _getUserInfo() async {
     _user = await widget.auth.getCurrentUser();
+
+    await _user.reload(); //Hatem to fix null display name
 
     _username = (_user.displayName == null
         ? 'no user login'
@@ -149,8 +152,8 @@ class _HomeState extends State<Home> {
             accountName: new Text(_username),
             accountEmail: new Text(_email),
             currentAccountPicture: new CircleAvatar(
-            backgroundImage: NetworkImage('test'),
-              backgroundColor: Colors.yellow,
+              backgroundImage: NetworkImage('test'),
+              backgroundColor: Colors.purple,
             ),
           ),
           ListTile(
